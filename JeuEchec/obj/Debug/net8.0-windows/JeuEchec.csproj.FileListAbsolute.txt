@@ -1,0 +1,17 @@
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\bin\Debug\net8.0-windows\JeuEchec.exe
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\bin\Debug\net8.0-windows\JeuEchec.deps.json
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\bin\Debug\net8.0-windows\JeuEchec.runtimeconfig.json
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\bin\Debug\net8.0-windows\JeuEchec.dll
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\bin\Debug\net8.0-windows\JeuEchec.pdb
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.Form1.resources
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.csproj.GenerateResource.cache
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.AssemblyInfoInputs.cache
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.AssemblyInfo.cs
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.csproj.CoreCompileInputs.cache
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.sourcelink.json
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.dll
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\refint\JeuEchec.dll
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.pdb
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\JeuEchec.genruntimeconfig.cache
+C:\Users\6223134\OneDrive - Cegep de Lanaudiere\Cegep\PROGIIII\Echec\JeuEchec\obj\Debug\net8.0-windows\ref\JeuEchec.dll
