@@ -2,12 +2,41 @@ namespace JeuEchec;
 
 public class Mouvement
 {
-    private byte xDebut;
-    private byte yDebut;
-    private byte xFin;
-    private byte yFin;
-    private Piece pieceCapture;
-    private bool estReversible;
+    private byte m_xDebut;
+    private byte m_yDebut;
+    private byte m_xFin;
+    private byte m_yFin;
+    private Piece m_pieceCapture;
+    private bool m_estReversible;
+
+    public Mouvement(byte xDebut, byte xFin,byte yDebut, byte yFin)
+    {
+        this.m_xDebut = xDebut;
+        this.m_yDebut = xDebut;
+        this.m_xFin = xFin;
+        this.m_yFin = yFin;
+    }
+    
+    public byte xDebut
+    {
+        get { return m_xDebut; }
+        set { m_xDebut = value; }
+    }
+    public byte xFin
+    {
+        get { return m_xFin; }
+        set { m_xFin = value; }
+    }
+    public byte yDebut
+    {
+        get { return m_yDebut; }
+        set { m_yDebut = value; }
+    }
+    public byte yFin
+    {
+        get { return m_yFin; }
+        set { m_yFin = value; }
+    }
 
     /// <summary>
     /// Determine si le mouvement est horizontal

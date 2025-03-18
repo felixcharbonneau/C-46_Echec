@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JeuEchec")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+030032634b66ca552ade3ec96b209e4b910cb1a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8201539ac9828b2892b9f91ec414c0280cf9c3cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("JeuEchec")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JeuEchec")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

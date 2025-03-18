@@ -85,7 +85,7 @@ public abstract class Piece {
     /// <summary>
     /// Si la piece peut etre capturée
     /// </summary>
-    /// <returns>true si la piece est capturable</returns>
+    /// <returns>true par defaut</returns>
     public virtual bool estCapturable()
     {
         return true;
