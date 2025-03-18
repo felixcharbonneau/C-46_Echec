@@ -15,7 +15,7 @@ public class Mouvement
     /// <param name="min">nombre de case minimal pour le mouvement</param>
     /// <param name="max">nombre de case maximal pour le mouvement</param>
     /// <returns>true si le mouvement est horizontal</returns>
-    public bool estHorizontal(byte min, byte max) {
+    public bool estHorizontal(byte min = 0, byte max = 8) {
         return yDebut == yFin && xFin-xDebut <= max && xFin-xDebut >= min;
     }
     /// <summary>
@@ -24,7 +24,7 @@ public class Mouvement
     /// <param name="min">nombre de case minimal pour le mouvement</param>
     /// <param name="max">nombre de case maximal pour le mouvement</param>
     /// <returns>true si le mouvement est vertical</returns>
-    public bool estVertical(byte min, byte max)
+    public bool estVertical(byte min = 0, byte max = 8)
     {
         return xDebut == xFin && yFin-yDebut <= max && yFin-yDebut >= min;
     }

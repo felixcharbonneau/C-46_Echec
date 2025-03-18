@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\PROGIIII\\Echec\\JeuEchec\\JeuEchec.csproj": {}
+    "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\C-46_Echec\\JeuEchec\\JeuEchec.csproj": {}
   },
   "projects": {
-    "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\PROGIIII\\Echec\\JeuEchec\\JeuEchec.csproj": {
+    "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\C-46_Echec\\JeuEchec\\JeuEchec.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\PROGIIII\\Echec\\JeuEchec\\JeuEchec.csproj",
+        "projectUniqueName": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\C-46_Echec\\JeuEchec\\JeuEchec.csproj",
         "projectName": "JeuEchec",
-        "projectPath": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\PROGIIII\\Echec\\JeuEchec\\JeuEchec.csproj",
+        "projectPath": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\C-46_Echec\\JeuEchec\\JeuEchec.csproj",
         "packagesPath": "C:\\Users\\6223134\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\PROGIIII\\Echec\\JeuEchec\\obj\\",
+        "outputPath": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\C-46_Echec\\JeuEchec\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\6223134\\AppData\\Roaming\\NuGet\\NuGet.Config",
