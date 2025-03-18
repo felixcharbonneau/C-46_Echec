@@ -14,13 +14,27 @@ public class Plateau
     
     public bool provoqueCapture(Mouvement mouvement)
     {
-        bool provoqueCapture = false;
-        if (this[mouvement.xFin,mouvement.yFin] is not null && this[mouvement.xDebut,mouvement.yDebut] is not null){
-            provoqueCapture = this[mouvement.xFin,mouvement.yFin].Couleur == this[mouvement.xDebut,mouvement.yDebut].Couleur;
-        }
-        return  provoqueCapture; 
+        return this[mouvement.xFin,mouvement.yFin] is not null;
     }
 
+    public bool estPionFantome(Mouvement mouvement)
+    {
+        bool estFantome = false;
+        
+        if (this[mouvement.xFin, mouvement.yFin].Couleur == Couleur.BLANC)
+        {
+            estFantome = this[mouvement.xFin, mouvement.yFin].Equals(this[mouvement.xFin + 1, mouvement.yFin]);
+        }
+        else if (this[mouvement.xFin, mouvement.yFin].Couleur == Couleur.NOIR)
+        {
+            estFantome = this[mouvement.xFin, mouvement.yFin].Equals(this[mouvement.xFin - 1, mouvement.yFin]);
+        }
+        
+        return estFantome;
+    }
+    
+    
+    
     public string coupEstPossible(Mouvement mouvement, int tour)
     {
         Piece caseDebut = this[mouvement.xDebut,mouvement.yDebut];
@@ -32,6 +46,19 @@ public class Plateau
             if (caseDebut.coupEstPossible(mouvement, tour))
             {
                 if (provoqueCapture(mouvement))
+                {
+                    if (caseDebut.Couleur != caseFin.Couleur)
+                    {
+
+                    }
+                    else
+                    {
+                        message = "Impossible de capturer une piece alliée";
+                    }
+                }
+            }else if (provoqueCapture(mouvement) && caseDebut.captureEstPossible(mouvement, tour))
+            {
+                if (estPionFantome(mouvement) && caseDebut.peutEnPassant() && caseFin.dernierTourBouge == tour - 1)
                 {
                     
                 }
