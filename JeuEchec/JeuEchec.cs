@@ -1,6 +1,6 @@
 namespace JeuEchec
 {
-    internal static class JeuEchec
+    public class JeuEchec
     {
         /// <summary>
         ///  Le point d'entrée principal de l'application
@@ -8,8 +8,15 @@ namespace JeuEchec
         [STAThread]
         static void Main()
         {
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            JeuEchec jeuEchec = new JeuEchec();
+            
+            
+        }
+
+        public JeuEchec()
+        {
+            Vue Vue = new Vue();
+            Modele modele = new Modele();
         }
     }
 }

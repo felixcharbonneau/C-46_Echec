@@ -1,6 +1,6 @@
 ﻿namespace JeuEchec
 {
-    partial class Form1
+    partial class FormMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -81,12 +81,13 @@
             label1.Size = new System.Drawing.Size(897, 174);
             label1.TabIndex = 4;
             label1.Text = "Jeu d\'échec";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(944, 520);
+            ClientSize = new System.Drawing.Size(928, 515);
             Controls.Add(label1);
             Controls.Add(listView1);
             Controls.Add(button3);

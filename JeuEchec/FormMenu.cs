@@ -1,8 +1,12 @@
 namespace JeuEchec
 {
-    public partial class Form1 : Form
+    public partial class FormMenu : Form
     {
-        public Form1() {
+        public FormMenu()
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false; 
+            this.MinimizeBox = false; 
             InitializeComponent();
         }
 

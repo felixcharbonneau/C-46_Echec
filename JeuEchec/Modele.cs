@@ -8,4 +8,9 @@ public class Modele {
     {
         return partie.jouerCoup(xDebut, xFin, yDebut, yFin);
     }
+
+    public Modele()
+    {
+                
+    }
 }
