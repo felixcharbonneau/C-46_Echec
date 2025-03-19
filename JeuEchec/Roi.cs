@@ -1,7 +1,14 @@
 namespace JeuEchec;
 
+/// <summary>
+/// Classe pour un roi dans un jeu d'échec
+/// </summary>
 public class Roi : Piece
 {
+    /// <summary>
+    /// Constructeur
+    /// </summary>
+    /// <param name="couleur">Couleur de la pièce</param>
     public Roi(Couleur couleur) : base(couleur)
     {
     }

@@ -201,7 +201,7 @@ public class Plateau
             }
             else
             {
-                message = "Impossible de bouger une pièce enemie";
+                message = "Impossible de bouger une pièce ennemie";
             }
         }
         

@@ -73,7 +73,6 @@ public abstract class Piece {
     {
         return false;
     }
-
     /// <summary>
     /// Si la piece peut faire un coup en passant
     /// </summary>
@@ -93,7 +92,7 @@ public abstract class Piece {
     /// <summary>
     /// Serialisation d'une piece
     /// </summary>
-    /// <returns></returns>
+    /// <returns>Piece </returns>
     public override string ToString()
     {
         return "Piece:";

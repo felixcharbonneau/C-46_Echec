@@ -21,6 +21,14 @@ public class Partie
         
     }
     
+    /// <summary>
+    /// Pour jouer un coup
+    /// </summary>
+    /// <param name="xDebut">Coordonnées en x de la case de début</param>
+    /// <param name="xFin">Coordonnées en y de la case de début</param>
+    /// <param name="yDebut">Coordonnées en x de la case de fin</param>
+    /// <param name="yFin">Coordonnées en x de la case de fin</param>
+    /// <returns>Le message d'erreur ou si le coup est possible avec le plateau sérialisé</returns>
     public string jouerCoup(byte xDebut, byte xFin, byte yDebut, byte yFin)
     {
         Mouvement mouvement = new Mouvement(xDebut, xFin, yDebut, yFin);
