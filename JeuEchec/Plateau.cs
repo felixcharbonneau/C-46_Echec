@@ -1,11 +1,46 @@
 namespace JeuEchec;
 
+/// <summary>
+/// Classe pour le plateau d'un jeu d'échec
+/// </summary>
 public class Plateau
 {
-    private int derniereCaptureOuMouvPion;
+    private int derniereCaptureOuMouvPion;//< dernier coup ou il a eu une capture ou un mouvement de pion
+    /// <summary>
+    /// Constructeur d'un nouveau plateau
+    /// </summary>
     public Plateau()
     {
+        //pions
+        for (int i = 0; i < 8; i++)
+        {
+            this[i, 1] = new Pion(Couleur.BLANC);
+            this[i, 6] = new Pion(Couleur.BLANC);
+        }
+        //Tours
+        this[0,0] = new Tour(Couleur.BLANC);
+        this[0,7] = new Tour(Couleur.BLANC);
         
+        this[7,0] = new Tour(Couleur.NOIR);
+        this[7,7] = new Tour(Couleur.NOIR);
+        //Cavaliers
+        this[0,1] = new Tour(Couleur.BLANC);
+        this[0,6] = new Tour(Couleur.BLANC);
+        
+        this[7,1] = new Tour(Couleur.NOIR);
+        this[7,6] = new Tour(Couleur.NOIR);
+        //Fous
+        this[0,2] = new Tour(Couleur.BLANC);
+        this[0,5] = new Tour(Couleur.BLANC);
+        
+        this[7,2] = new Tour(Couleur.NOIR);
+        this[7,5] = new Tour(Couleur.NOIR);
+        //Reines
+        this[0, 3] = new Reine(Couleur.BLANC);
+        this[7,4] = new Reine(Couleur.NOIR);
+        //Rois
+        this[0, 4] = new Reine(Couleur.BLANC);
+        this[7,3] = new Reine(Couleur.NOIR);
     }
     /// <summary>
     /// Constructeur de copie
@@ -17,7 +52,7 @@ public class Plateau
         {
             for (int j = 0; j < 8; j++)
             {
-                this[j, i] = plateau[i, j];
+                this[i, j] = plateau[i, j];
             }
         }
         this.derniereCaptureOuMouvPion = plateau.derniereCaptureOuMouvPion;
@@ -149,9 +184,33 @@ public class Plateau
 
         return message;
     }
+    /// <summary>
+    /// Pour joueur un Coup
+    /// </summary>
+    /// <param name="mouvement">coup à jouer</param>
     public void jouerCoup(Mouvement mouvement)
     {
         this[mouvement.xFin, mouvement.yFin] = this[mouvement.xDebut, mouvement.yDebut];
         this[mouvement.xDebut, mouvement.yDebut] = null;
+    }
+
+    /// <summary>
+    /// Serilization du plateau
+    /// </summary>
+    /// <returns>Plateau sérialisé</returns>
+    public override string ToString()
+    {
+        string plateau = "";
+        for (int i = 0; i < 8; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                if (this[i,j] is not null)
+                {
+                    plateau += this[i,j].ToString() + ":" + i + "," + j + ";";
+                }
+            }
+        }
+        return plateau;
     }
 }

@@ -14,4 +14,8 @@ public class Cavalier : Piece
     {
         return false;
     }
+    public override string ToString()
+    {
+        return "C";
+    }
 }

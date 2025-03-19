@@ -11,4 +11,8 @@ public class Fou : Piece
     {
         return mouvement.estDiagonal(1);
     }
+    public override string ToString()
+    {
+        return "F";
+    }
 }

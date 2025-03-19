@@ -15,4 +15,9 @@ public class Roi : Piece
     {
         return true;
     }
+
+    public override string ToString()
+    {
+        return "R";
+    }
 }

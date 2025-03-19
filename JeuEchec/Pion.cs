@@ -36,4 +36,8 @@ public class Pion : Piece
     {
         return true;
     }
+    public override string ToString()
+    {
+        return "P";
+    }
 }

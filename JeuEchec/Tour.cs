@@ -11,4 +11,8 @@ public class Tour : Piece
     {
         return mouvement.estHorizontal() || mouvement.estVertical();
     }
+    public override string ToString()
+    {
+        return "T";
+    }
 }
