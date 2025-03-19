@@ -3,7 +3,7 @@ namespace JeuEchec
     internal static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        ///  Le point d'entrée principal de l'application
         /// </summary>
         [STAThread]
         static void Main()

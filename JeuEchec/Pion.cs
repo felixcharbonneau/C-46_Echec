@@ -7,7 +7,7 @@ public class Pion : Piece
         
     }
 
-    public override bool coupEstPossible(Mouvement mouvement, int tour)
+    public override bool coupEstPossible(Mouvement mouvement)
     {
         bool estPossible = false;
         if ((mouvement.estVertical() && mouvement.yFin-mouvement.yDebut == 2) && this.dernierTourBouge == -1) {
@@ -22,7 +22,7 @@ public class Pion : Piece
         return estPossible;
     }
     
-    public override bool captureEstPossible(Mouvement mouvement, int tour)
+    public override bool captureEstPossible(Mouvement mouvement)
     {
         return mouvement.yFin-mouvement.yDebut == 1 && Math.Abs(mouvement.xFin-mouvement.xDebut) == 1;
     }

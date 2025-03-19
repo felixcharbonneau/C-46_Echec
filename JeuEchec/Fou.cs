@@ -7,7 +7,7 @@ public class Fou : Piece
         
     }
 
-    public override bool coupEstPossible(Mouvement mouvement, int tour)
+    public override bool coupEstPossible(Mouvement mouvement)
     {
         return mouvement.estDiagonal(1);
     }

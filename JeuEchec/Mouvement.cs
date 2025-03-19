@@ -38,6 +38,12 @@ public class Mouvement
         set { m_yFin = value; }
     }
 
+    public Piece pieceCapture
+    {
+        get { return m_pieceCapture; }
+        set { m_pieceCapture = value; }
+    }
+
     /// <summary>
     /// Determine si le mouvement est horizontal
     /// </summary>
@@ -63,7 +69,7 @@ public class Mouvement
     /// </summary>
     /// <param name="pente">Pente du mouvement</param>
     /// <returns>true si le mouvement est diagonal</returns>
-    public bool estDiagonal(double pente)
+    public bool estDiagonal(double pente, byte min = 2, byte max = 16)
     {
         bool estDiagonal = true;
         //Eviter une division par 0
@@ -76,7 +82,10 @@ public class Mouvement
         else if (Math.Abs(((double)Math.Abs(yFin - yDebut) / (double)Math.Abs(xFin - xDebut)) - pente) < 0.0001) {
             estDiagonal = false;            
         }
+        int deplacement = Math.Abs(yFin-yDebut)+Math.Abs(xFin-xDebut);
         
-        return estDiagonal;
+        
+        
+        return estDiagonal && deplacement >= min && deplacement <= max;
     }
 }

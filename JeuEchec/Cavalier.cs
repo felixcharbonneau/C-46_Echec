@@ -7,9 +7,8 @@ public class Cavalier : Piece
         
     }
 
-    public override bool coupEstPossible(Mouvement mouvement, int tour) {
-        bool estPossible = (Math.Abs(mouvement.xFin - mouvement.xDebut) + Math.Abs(mouvement.yFin - mouvement.yDebut)) == 3;
-        return mouvement.estDiagonal(2) && estPossible;
+    public override bool coupEstPossible(Mouvement mouvement) {
+        return mouvement.estDiagonal(2, 3,3);
     }
     public override bool peutColision()
     {

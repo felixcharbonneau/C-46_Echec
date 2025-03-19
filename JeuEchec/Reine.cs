@@ -7,7 +7,7 @@ public class Reine : Piece
         
     }
 
-    public override bool coupEstPossible(Mouvement mouvement, int tour)
+    public override bool coupEstPossible(Mouvement mouvement)
     {
         return mouvement.estDiagonal(1) || mouvement.estHorizontal() || mouvement.estVertical();
     }

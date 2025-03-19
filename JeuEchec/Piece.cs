@@ -1,7 +1,7 @@
 namespace JeuEchec;
 
 /// <summary>
-/// Classe pour une piece pour un jeu d'echec
+/// Classe abstraite pour une piece pour un jeu d'echec
 /// </summary>
 public abstract class Piece {
     private Couleur m_couleur;
@@ -38,16 +38,16 @@ public abstract class Piece {
     /// <param name="mouvement">Mouvement a effectuer</param>
     /// <param name="tour">Tour ou le mouvement est effectué</param>
     /// <returns>si le mouvement est possible</returns>
-    public abstract bool coupEstPossible(Mouvement mouvement, int tour);
+    public abstract bool coupEstPossible(Mouvement mouvement);
     /// <summary>
     /// Si la piece peut capturer avec ce mouvement
     /// </summary>
     /// <param name="mouvement">Mouvement a effectuer</param>
     /// <param name="tour">Tour ou le mouvement est effectué</param>
     /// <returns>Si la capture est possible</returns>
-    public virtual bool captureEstPossible(Mouvement mouvement, int tour)
+    public virtual bool captureEstPossible(Mouvement mouvement)
     {
-        return this.coupEstPossible(mouvement, tour);
+        return this.coupEstPossible(mouvement);
     }
     /// <summary>
     /// Si la piece a des colisions
