@@ -33,6 +33,7 @@
             button3 = new System.Windows.Forms.Button();
             listView1 = new System.Windows.Forms.ListView();
             label1 = new System.Windows.Forms.Label();
+            ButtonQuitter = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
             // button1
@@ -83,11 +84,22 @@
             label1.Text = "Jeu d\'échec";
             label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // ButtonQuitter
+            // 
+            ButtonQuitter.Location = new System.Drawing.Point(795, 9);
+            ButtonQuitter.Name = "ButtonQuitter";
+            ButtonQuitter.Size = new System.Drawing.Size(113, 32);
+            ButtonQuitter.TabIndex = 5;
+            ButtonQuitter.Text = "Quitter";
+            ButtonQuitter.UseVisualStyleBackColor = true;
+            ButtonQuitter.Click += ButtonQuitter_Click;
+            // 
+            // FormMenu
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(928, 515);
+            Controls.Add(ButtonQuitter);
             Controls.Add(label1);
             Controls.Add(listView1);
             Controls.Add(button3);
@@ -96,6 +108,8 @@
             Text = "Jeu d\'échec";
             ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button ButtonQuitter;
 
         private System.Windows.Forms.Label label1;
 

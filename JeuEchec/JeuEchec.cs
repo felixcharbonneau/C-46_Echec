@@ -18,5 +18,12 @@ namespace JeuEchec
             Vue Vue = new Vue();
             Modele modele = new Modele();
         }
+
+        public static void initPartie()
+        {
+            
+        }
+
+        
     }
 }

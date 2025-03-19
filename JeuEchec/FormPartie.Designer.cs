@@ -31,16 +31,30 @@ partial class FormPartie
     /// </summary>
     private void InitializeComponent()
     {
+        pictureBox1 = new System.Windows.Forms.PictureBox();
+        ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
         SuspendLayout();
+        // 
+        // pictureBox1
+        // 
+        pictureBox1.Location = new System.Drawing.Point(81, 63);
+        pictureBox1.Name = "pictureBox1";
+        pictureBox1.Size = new System.Drawing.Size(506, 521);
+        pictureBox1.TabIndex = 0;
+        pictureBox1.TabStop = false;
         // 
         // FormPartie
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(675, 869);
+        Controls.Add(pictureBox1);
         Text = "FormPartie";
+        ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.PictureBox pictureBox1;
 
     #endregion
 }

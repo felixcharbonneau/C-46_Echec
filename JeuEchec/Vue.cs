@@ -8,5 +8,8 @@ public class Vue
     {
         menu = new FormMenu();
         Application.Run(new FormMenu());
+        
     }
+
+    
 }

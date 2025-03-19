@@ -12,7 +12,8 @@ namespace JeuEchec
 
         private void button1_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            JeuEchec.initPartie();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -24,6 +25,10 @@ namespace JeuEchec
         {
             throw new System.NotImplementedException();
         }
-        
+
+        private void ButtonQuitter_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
