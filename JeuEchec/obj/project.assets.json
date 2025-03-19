@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\6224724\\.nuget\\packages\\": {}
+    "C:\\Users\\6223134\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\6224724\\OneDrive - Cegep de Lanaudiere\\C-46_Echec\\JeuEchec\\JeuEchec.csproj",
+      "projectUniqueName": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\C-46_Echec\\JeuEchec\\JeuEchec.csproj",
       "projectName": "JeuEchec",
-      "projectPath": "C:\\Users\\6224724\\OneDrive - Cegep de Lanaudiere\\C-46_Echec\\JeuEchec\\JeuEchec.csproj",
-      "packagesPath": "C:\\Users\\6224724\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\6224724\\OneDrive - Cegep de Lanaudiere\\C-46_Echec\\JeuEchec\\obj\\",
+      "projectPath": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\C-46_Echec\\JeuEchec\\JeuEchec.csproj",
+      "packagesPath": "C:\\Users\\6223134\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\6223134\\OneDrive - Cegep de Lanaudiere\\Cegep\\C-46_Echec\\JeuEchec\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\6224724\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\6223134\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
