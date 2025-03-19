@@ -16,7 +16,6 @@ public class Mouvement
         this.m_xFin = xFin;
         this.m_yFin = yFin;
     }
-    
     public byte xDebut
     {
         get { return m_xDebut; }

@@ -11,6 +11,7 @@ public class Plateau
     /// </summary>
     public Plateau()
     {
+        this.derniereCaptureOuMouvPion = 0;
         //pions
         for (int i = 0; i < 8; i++)
         {
@@ -57,15 +58,30 @@ public class Plateau
         }
         this.derniereCaptureOuMouvPion = plateau.derniereCaptureOuMouvPion;
     }
+    /// <summary>
+    /// Iterateur contenant les pieces du plateau
+    /// </summary>
+    /// <param name="x">Coordonnées en x de la piece</param>
+    /// <param name="y">Coordonnées en y de la piece</param>
     public Piece this[int x, int y]
     {
         get{ return this[x, y]; }
         set{ this[x, y] = value; }
     }
+    /// <summary>
+    /// Determine si un mouvement provoque une capture
+    /// </summary>
+    /// <param name="mouvement">Mouvement a vérifier</param>
+    /// <returns>Si le mouvement provoque une capture</returns>
     public bool provoqueCapture(Mouvement mouvement)
     {
         return this[mouvement.xFin,mouvement.yFin] is not null;
     }
+    /// <summary>
+    /// Verifie si une piece non capturable est en echec
+    /// </summary>
+    /// <param name="couleur">couleur des pièces à vérifier</param>
+    /// <returns>Si une piece est en echec</returns>   
     public bool estEnEchec(Couleur couleur)
     {
         bool enEchec = false;
@@ -84,6 +100,12 @@ public class Plateau
         }
         return enEchec;
     }
+    /// <summary>
+    /// Vérifie si une piece est en echec
+    /// </summary>
+    /// <param name="x">Coordonnées en x de la piece</param>
+    /// <param name="y">Coordonnées en y de la piece</param>
+    /// <returns>Si la piece est en echec</returns>
     public bool estEnEchec(byte x, byte y)
     {
         bool estEnEchec = false;
@@ -121,6 +143,12 @@ public class Plateau
         
         return estFantome;
     }
+    /// <summary>
+    /// Verifie si un coup est possible
+    /// </summary>
+    /// <param name="mouvement">Mouvement à effectuer</param>
+    /// <param name="tour">Tour durant lequel effectuer le mouvement</param>
+    /// <returns>Message contenant si le coup est possible ou le message d'erreur</returns>
     public string coupEstPossible(Mouvement mouvement, int tour)
     {
         Piece caseDebut = this[mouvement.xDebut,mouvement.yDebut];
@@ -188,9 +216,10 @@ public class Plateau
     /// Pour joueur un Coup
     /// </summary>
     /// <param name="mouvement">coup à jouer</param>
-    public void jouerCoup(Mouvement mouvement)
+    public void jouerCoup(Mouvement mouvement, int tour)
     {
         this[mouvement.xFin, mouvement.yFin] = this[mouvement.xDebut, mouvement.yDebut];
+        this[mouvement.xDebut, mouvement.yDebut].dernierTourBouge = tour;
         this[mouvement.xDebut, mouvement.yDebut] = null;
     }
 

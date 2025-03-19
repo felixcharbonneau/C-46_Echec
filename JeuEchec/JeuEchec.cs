@@ -1,6 +1,6 @@
 namespace JeuEchec
 {
-    internal static class Program
+    internal static class JeuEchec
     {
         /// <summary>
         ///  Le point d'entrée principal de l'application
