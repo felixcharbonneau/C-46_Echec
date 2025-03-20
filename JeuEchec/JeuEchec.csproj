@@ -26,9 +26,4 @@
     </EmbeddedResource>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Vue\" />
-  </ItemGroup>
-
 </Project>
