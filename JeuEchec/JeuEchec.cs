@@ -19,9 +19,10 @@ namespace JeuEchec
             Modele modele = new Modele();
         }
 
-        public static void initPartie()
+        public static void nouvellePartie()
         {
-            
+            Guid guid = Guid.NewGuid();
+            Modele.nouvellePartie(guid);
         }
 
         

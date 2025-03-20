@@ -13,6 +13,10 @@ public class Modele {
     {
                 
     }
-
+    
+    public static void nouvellePartie(Guid guid)
+    {
+            
+    }
     
 }
